@@ -1,0 +1,22 @@
+
+
+ul {
+    list-style-type: none;
+}
+
+.carrier mat-card {
+    margin: 5px;
+    box-shadow: 1px 1px 2px 2px;
+}
+
+mat-card-header {
+    box-shadow: 1px 1px 0px 0px yellowgreen;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+div, mat-card, mat-card-header {
+    background-color: black;
+    color: white;
+}

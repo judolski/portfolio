@@ -1,0 +1,78 @@
+
+input, textarea {
+    margin: 5px;
+    outline: none;
+    background-color: white;
+}
+
+span {
+    margin: 5px;
+}
+
+button, a {
+    margin: 5px;
+    border :2px solid yellowgreen;
+    color: #ffffff;
+}
+
+button:hover {
+    font-size: 20px;
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+.flex-spacer {
+    flex: 1 1 auto;
+}
+
+.msg {
+    background-color:maroon; 
+    border-radius:3px; 
+    height: 50px;
+}
+
+ul li {
+    background-color: black;
+    text-align: center;
+}
+
+div {
+    background-color: black;
+    color: white;
+}
+
+.form-data {
+    box-shadow: 0px 0px 6px 4px;
+}
+
+mat-error {
+    margin-left: 5px;
+}
+
+mat-spinner {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .response {
+        position: absolute;
+        left: 62%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .response {
+        position: absolute;
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+

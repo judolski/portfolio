@@ -1,0 +1,36 @@
+<div fxFlex="100">
+    <div class="form-data">
+        <mat-error *ngIf="invalidForm && contactForm.invalid && !formErrors.name && !formErrors.email && !formErrors.subject && !formErrors.message">{{invalidForm}}</mat-error>
+        <form [formGroup]="contactForm" #cform="ngForm" fxLayout="column" novalidate>
+            <span>I am open to any fulltime or freelance job. You can contact me via the form below or via any of my handles.</span>
+            <input formControlName="name" placeholder="Name" id="name">
+            <input formControlName="email" placeholder="Email" id="email">
+            <input formControlName="subject" placeholder="Subject" id="subject">
+            <textarea formControlName="message" placeholder="Leave a message"></textarea>
+            <button type="submit" (click)="submit()" mat-button>
+                <b [ngStyle]="{'display':showBtn}">Submit</b>
+                        <!--progress spinner -->
+                <mat-spinner [ngStyle]="{'display':spinning}" [diameter]="30" strokeWidth="10"></mat-spinner>
+            </button>
+            
+            <mat-error fxLayout="column">
+                <small *ngIf="formErrors.name"><i class="fa fa-exclamation-circle"></i>{{formErrors.name}}</small> 
+                <small *ngIf="formErrors.email"><i class="fa fa-exclamation-circle"></i>{{formErrors.email}}</small>  
+                <small *ngIf="formErrors.message"><i class="fa fa-exclamation-circle"></i>{{formErrors.message}}</small>                                 
+            </mat-error>
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a mat-icon-button href="mailto:judechidiowo@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
+                <a mat-icon-button href="https://twitter.com/jUd0LSki?s=08" class="nav-link"><i class="fa fa-twitter"></i></a>
+                <a mat-icon-button href="https://www.linkedin.com/in/chidi-j-owo-989568104" class="nav-link"><i class=" fa fa-linkedin"></i></a>
+                <a mat-icon-button href="https://github.com/judolski" class="nav-link"><i class=" fa fa-github"></i></a>
+            </li>   
+        </ul>
+    </div>
+
+    <span class="container response" [ngStyle]="{'display': displayResponse}">
+        <mat-error class="alert alert-danger" *ngIf="errorMsg">{{errorMsg}}</mat-error>
+        <span class="alert alert-success" *ngIf="successMsg">{{successMsg}}</span>
+    </span>
+</div>

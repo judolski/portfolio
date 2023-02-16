@@ -1,0 +1,55 @@
+<div fxLayout="column" class="container-fluid">
+    <mat-card fxFlex="30">
+        <div class="card-header">
+            <h6>Computer Based Test(CBT)</h6>
+        </div>
+        <mat-card-content>
+            <span>The images below show interface samples of a project that I developed. It is an examination web app that requires users to register, login and take exams. it also consists of an admin page where admin can create questions, access results and modify information of users. 
+                The project was developed using Angular as frontend, NodeJS and MongoDb as Backend.
+
+
+            </span>
+        </mat-card-content>
+    </mat-card>
+
+    <div fxFlex>
+		<mat-grid-list  [cols]="my_break_point"  (window:resize)="handleSize($event)"  rowHeight="300px">
+			<mat-grid-tile appHighlight>
+				<img height="300px" src="../../assets/project_pics/user1.PNG" >
+				<mat-grid-tile-footer>
+					<h1 style="text-align: right;">User Login Page</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+            <mat-grid-tile appHighlight>
+				<img height="400px" src="../../assets/project_pics/user2.PNG" >
+				<mat-grid-tile-footer>
+					<h1>Exam Interface</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+            <mat-grid-tile appHighlight>
+				<img height="300px" src="../../assets/project_pics/user3.PNG" >
+				<mat-grid-tile-footer>
+					<h1>User Password Reset</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+            <mat-grid-tile appHighlight>
+				<img height="300px" src="../../assets/project_pics/admin1.PNG" >
+				<mat-grid-tile-footer>
+					<h1>Admin Login</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+            <mat-grid-tile appHighlight>
+				<img height="300px" src="../../assets/project_pics/admin2.PNG" >
+				<mat-grid-tile-footer>
+					<h1>Admin Menu</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+            <mat-grid-tile appHighlight>
+				<img height="300px" src="../../assets/project_pics/admin3.PNG" >
+				<mat-grid-tile-footer>
+					<h1>User Records</h1>
+				</mat-grid-tile-footer>
+			</mat-grid-tile>
+		</mat-grid-list>
+	</div>
+</div>
