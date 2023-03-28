@@ -1,0 +1,29 @@
+.card-header {
+    box-shadow: 1px 1px 0px 0px yellowgreen;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h6 {
+    margin: 5px;
+}
+
+div, mat-card, mat-card-header {
+    background-color: black;
+    color: white;
+}
+
+img {
+    min-width: 30%;
+}
+
+mat-grid-tile {
+    margin: 5px;
+}
+
+mat-grid-tile-footer h1 {
+    font-weight: bold;
+    border :2px solid yellowgreen;
+}
+

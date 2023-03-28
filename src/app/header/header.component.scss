@@ -1,0 +1,51 @@
+div, mat-card, mat-card-header {
+    background-color: black;
+    color: white;
+}
+
+.image {
+    width: 100px;
+    height: 90px;
+    border-radius: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.active {
+    font-weight:800;
+}
+
+input, textarea {
+    margin: 5px;
+}
+
+button {
+    border :2px solid yellowgreen;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    font-size: 17px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px
+}
+
+li a {
+    color: white;
+}
+
+
+.profile {
+    margin-bottom: 10px;
+}
+
+.modal {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+    top: 30%;
+    left: calc(50% - 150px);
+}
